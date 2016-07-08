@@ -1,0 +1,14 @@
+{
+  "name": "arduino_cloud",
+  "version": "1.0.0",
+  "description": "connect to Arduino Cloud",
+  "main": "arduinoCloud.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lorenzo romagnoli",
+  "license": "GPL-2.0",
+  "dependencies": {
+    "mqtt": "^1.12.0"
+  }
+}
