@@ -2,15 +2,17 @@
 
 A nodejs library to connect to Arduino Cloud via mqtt.
 
+
+
 ## Simple usage
 
 ```
 var ArduinoCLoud = require("../arduinoCloud.js");
 
-var name = "nodeJSClient";
-var thing_ID = "78cfcbbb-0d47-49fd-bce9-772e479856f0";
-var thing_PSW = "adea922f-de11-498b-8157-42f5e8da1d4c";
-var username = "casajasmina"
+var name = "";
+var thing_ID = "";
+var thing_PSW = "";
+var username = ""
 
 var mything = new ArduinoCLoud(username, name, thing_ID, thing_PSW);
 
