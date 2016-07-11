@@ -2,7 +2,7 @@ var mqtt = require('mqtt');
 var util = require('util');
 var events = require('events');
 
-const server = "mqtts://mqtt.arduino.cc";
+const server = "mqtts://mqtt-dev.arduino.cc";
 const port = "8883";
 
 var properties;
@@ -80,11 +80,8 @@ ArduinoCloud.prototype.addExternalProperty = function(thingname, propertyName) {
 }
 
 
-
 ArduinoCloud.prototype.onConnect = function() {
     console.log("connected!");
-    this.client.subscribe(this.thingCue + "#");
-    console.log("subscribed to: " + this.thingCue + "#");
 };
 
 
@@ -94,7 +91,6 @@ ArduinoCloud.prototype.onMessage = function(topic, message) {
     var thingName = topic.split("/").slice(1, 2)
     var propertyValue = message.toString();
 
-    console.log(this.name);
     if (thingName == this.name) {
         this.emit('propertyChanged', propertyName, propertyValue);
     } else {
