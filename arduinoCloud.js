@@ -2,7 +2,7 @@ var mqtt = require('mqtt');
 var util = require('util');
 var events = require('events');
 
-const server = "mqtts://mqtt-dev.arduino.cc";
+const server = "mqtts://mqtt.arduino.cc";
 const port = "8883";
 
 var properties;

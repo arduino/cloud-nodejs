@@ -1,6 +1,6 @@
 {
   "name": "arduino_cloud",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "connect to Arduino Cloud",
   "main": "arduinoCloud.js",
   "scripts": {
