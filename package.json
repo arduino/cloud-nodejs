@@ -9,6 +9,6 @@
   "author": "lorenzo romagnoli",
   "license": "GPL-2.0",
   "dependencies": {
-    "mqtt": "^1.12.0"
+    "mqtt": "^4.2.3"
   }
 }
